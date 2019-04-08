@@ -1,19 +1,12 @@
-import React from 'react';
-import uuid from 'uuid';
+import React, { Component } from 'react';
 import './Container.less';
 
-
-export function makeUser(name) {
-  return {
-    id: uuid(),
-    name,
-  };
-}
-
-export default function Container() {
-  return (
-    <div className='container-hello-world'>
-      Hello, World
-    </div>
-  );
+export default class Container extends Component {
+  render() {
+    return (
+      <div className='container-hello-world'>
+        Hello, World!
+      </div>
+    );
+  }
 }
